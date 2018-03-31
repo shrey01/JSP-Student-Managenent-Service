@@ -15,7 +15,7 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#first"><i class=""><img src="img/Welcome.png" height="25" width="auto"></i> (ES)<sup>2</sup>AD</a>
             </div>
-            <div class="navbar-collapse collapse" id="bs-navbar">
+            <div class="navbar-collapse collapse " id="bs-navbar">
                 <ul class="nav navbar-nav">
                     
                     <li>

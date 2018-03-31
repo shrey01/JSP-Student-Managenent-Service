@@ -89,19 +89,24 @@ function printDiv(divName) {
                         <p>student validation</p>
                     </a>
                 </li>
-               <li>
+              <li>
                     <a href="Action_file.jsp">
-                        <i class="glyphicon-folder-open"></i>
+                    <i class="material-icons">attach_file</i>
                         <p>Upload File</p>
                     </a>
                  </li>
-            <li>
+			<li>
                     <a href="teacher.jsp">
-                        <i class="glyphicon-folder-open"></i>
+                        <i class="material-icons">person_add</i>
                         <p>Add Teacher</p>
                     </a>
-                 </li>
-				
+                 </li>	
+                 <li>
+                    <a href="about.jsp">
+                       <i class="material-icons">record_voice_over</i>
+                        <p>Editorial</p>
+                    </a>
+                 </li>		
             </ul>
     	</div>
     </div>

@@ -93,7 +93,11 @@
                                <p>Account</p>
                             </a>
                         </li>
-                        
+                        <li>
+                            <a href="http://localhost/web/">
+                                <p>Chat Room</p>
+                            </a>
+                        </li>
                         <li>
                             <a href="../Logout.jsp">
                                 <p>Log out</p>

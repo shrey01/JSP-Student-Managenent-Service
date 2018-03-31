@@ -11,6 +11,8 @@
 <%@page import="org.apache.commons.fileupload.disk.DiskFileItemFactory"%>
 <%@page import="java.io.File"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import = "java.util.Date" %>
+<%@ page import = "java.text.SimpleDateFormat" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,7 +28,7 @@
  
         
             String str = session.getAttribute("UserName").toString();
-            String fname=null;
+            String atdate , fname=null;
             Connection con;
             Statement stm;
         File file;
@@ -64,7 +66,9 @@
         }
         }
         
-        
+                
+      SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+       atdate = sdf.format(new Date());
         
             try
                 {
@@ -72,7 +76,7 @@
                     Class.forName("com.mysql.jdbc.Driver");	
                     con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sis","root","");
                     stm=con.createStatement();
-                    String query="insert into file values('"+fname+"')";
+                    String query="insert into file values('"+fname+"','"+atdate+"')";
                   int res=stm.executeUpdate(query);
 		if(res!=0)
 			out.println("<br>Record Inserted .Please wait for server Redirect... ");

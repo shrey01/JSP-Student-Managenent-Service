@@ -89,7 +89,11 @@
                                <p>Account</p>
                             </a>
                         </li>
-                        
+                        <li>
+                            <a href="http://localhost/web/">
+                                <p>Chat Room</p>
+                            </a>
+                        </li>
                         <li>
                             <a href="../Logout.jsp">
                                 <p>Log out</p>
@@ -187,7 +191,7 @@
                         
                     </div>
                     <div class="col-md-12 text-center typo-line">
-                                    <span class="text-muted small">(ES)<sup>2</sup>AD | CSED, MNNIT Allahabad ©2017</span>
+                                    <span class="text-muted small">(ES)<sup>2</sup>AD | CSED, MNNIT Allahabad ©2017 <br>Developed By Shreyaskar Nath Tripathi </span>
 
                     </div>
 

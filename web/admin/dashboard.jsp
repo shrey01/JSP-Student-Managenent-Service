@@ -68,20 +68,26 @@
                
                  <li>
                     <a href="Action_file.jsp">
-                        <i class="glyphicon-folder-open"></i>
+                    <i class="material-icons">attach_file</i>
                         <p>Upload File</p>
                     </a>
                  </li>
 			<li>
                     <a href="teacher.jsp">
-                        <i class="glyphicon-folder-open"></i>
+                        <i class="material-icons">person_add</i>
                         <p>Add Teacher</p>
+                    </a>
+                 </li>	
+                 <li>
+                    <a href="about.jsp">
+                       <i class="material-icons">record_voice_over</i>
+                        <p>Editorial</p>
                     </a>
                  </li>	
             </ul>
     	</div>
     </div>
-
+</nav>
     <div class="main-panel">
         <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
@@ -204,7 +210,7 @@
                         
                     </div>
                     <div class="col-md-12 text-center typo-line">
-                                    <span class="text-muted small">(ES)<sup>2</sup>AD | CSED, MNNIT Allahabad ©2017</span>
+                                    <span class="text-muted small">(ES)<sup>2</sup>AD | CSED, MNNIT Allahabad ©2017 <br>Developed By Shreyaskar Nath Tripathi </span>
 
                     </div>
 

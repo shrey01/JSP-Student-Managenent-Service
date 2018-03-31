@@ -8,6 +8,18 @@
 <html lang="en">
 <head>
     <%@include file="header.jsp" %>
+      <script>
+function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+</script>
 </head>
 <body>
 <%@include file="connection.jsp" %>
@@ -64,18 +76,24 @@
                     </a>
                 </li>
             
-                <li>
+              <li>
                     <a href="Action_file.jsp">
-                        <i class="glyphicon-folder-open"></i>
+                    <i class="material-icons">attach_file</i>
                         <p>Upload File</p>
                     </a>
                  </li>
-		<li>
+			<li>
                     <a href="teacher.jsp">
-                        <i class="glyphicon-folder-open"></i>
+                        <i class="material-icons">person_add</i>
                         <p>Add Teacher</p>
                     </a>
-                 </li>		
+                 </li>	
+                 <li>
+                    <a href="about.jsp">
+                       <i class="material-icons">record_voice_over</i>
+                        <p>Editorial</p>
+                    </a>
+                 </li>			
             </ul>
     	</div>
     </div>
@@ -116,7 +134,7 @@
                 </div>
             </div>
         </nav>
-
+<div id="printableArea">
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
@@ -159,7 +177,7 @@
                                                         <td><%=rs.getString(14) %></td>
                                                         <td><%=rs.getString(15) %></td>
                                                         <td><%=rs.getString(16) %></td>
-                                                        <td><%=rs.getString(17) %></td>
+                                                        <td>********</td>
                                                         <td><%=rs.getString(18) %></td>
                                                         <td><%=rs.getString(19) %></td>
                                                         <td><%=rs.getString(20) %></td>
@@ -183,7 +201,10 @@
 
       
 
-
+ </div>    
+                                        <br> <br>   
+                                        <input type="button" class="btn btn-success btn-fill active middle "  onclick="printDiv('printableArea')" value="Print Data" />          
+                                            
     </div>
 </div>
 

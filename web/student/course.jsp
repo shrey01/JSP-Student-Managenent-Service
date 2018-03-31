@@ -89,7 +89,11 @@
                                <p>Account</p>
                             </a>
                         </li>
-                       
+                       <li>
+                            <a href="http://localhost/web/">
+                                <p>Chat Room</p>
+                            </a>
+                        </li>
                         <li>
                             <a href="../Logout.jsp">
                                 <p>Log out</p>
@@ -139,7 +143,7 @@ Spring MVC, Struts 2, Hibernate, PHP, Java Script, Boot Strap, Ajax, AngularJS, 
 						-->
 						                                <form>
 														  <input type="radio" name="course" value="9000" checked>Persons/Faculty <br>
-														  <input type="radio" name="course" value="8000">Students from other institutions <div class="col-xs-6 pull-right"> <input type="submit" class="btn btn-success pull-right" name="reg" value="Submit"> </div><br>
+														  <input type="radio" name="course" value="8000">Students from other institutions <div class="col-xs-6 pull-right"> <input type="submit" class="btn btn-success pull-right "disabled="disabled" name="reg" value="Submit"> </div><br>
 														  <input type="radio" name="course" value="7000">Students from MNNIT
 														 
       <%

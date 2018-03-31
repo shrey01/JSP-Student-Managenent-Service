@@ -3,7 +3,9 @@
     Created on : 23 Sep, 2017, 8:19:04 PM
     Author     : SHREYASKARNATH
 --%>
-
+</head>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
     <body>
         
         <div class="column">
@@ -45,7 +47,18 @@
         
         <td><%=rss.getString(3)%></td> 
         <td><%=rss.getString(4)%></td> 
-        <td><a data-toggle="popover" title="<%=rss.getString(2)%>" data-content="<%=rss.getString(2)%>">view</a></td>
+        <td>
+           <button onclick="myFunction()">Opne</button>
+
+            <script>
+            function myFunction() {
+                alert("<%=rss.getString(2)%>");
+            }
+            </script>
+
+        </td>
+      
+   
         <td><%=rss.getString(5)%></td>
          </tr>
       <% } %>

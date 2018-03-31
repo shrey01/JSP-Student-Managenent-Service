@@ -68,17 +68,22 @@
                 </li>
                <li>
                     <a href="Action_file.jsp">
-                        <i class="glyphicon-folder-open"></i>
+                    <i class="material-icons">attach_file</i>
                         <p>Upload File</p>
                     </a>
                  </li>
-            <li>
+			<li>
                     <a href="teacher.jsp">
-                        <i class="glyphicon-folder-open"></i>
+                        <i class="material-icons">person_add</i>
                         <p>Add Teacher</p>
                     </a>
-                 </li>
-				
+                 </li>	
+                 <li>
+                    <a href="about.jsp">
+                       <i class="material-icons">record_voice_over</i>
+                        <p>Editorial</p>
+                    </a>
+                 </li>		
             </ul>
     	</div>
     </div>
@@ -222,7 +227,7 @@
  
       <form class="form-horizontal" method="post" action="editcr.jsp" >
                        <div class="form-group">
-                       <br> <br>   <label class="control-label col-sm-2" for="course">Delete Course!!!</label>
+                       <br> <br>   <label class="control-label col-sm-2" for="course">->  Delete Course!!!</label>
                           <div class="col-sm-3">
                              <input type="text" class="form-control" name="t12" placeholder="Remove Course Name " required="true">
                                                    
@@ -230,9 +235,10 @@
                        </div>
           
                                                
-                        <div class="form-group" align="right"> 
+                        <div class="form-group" align="middle"> 
                           <div class="col-sm-offset-2 col-sm-10">
-                          <button type="submit" class="btn btn-default btn-fill"  name="btn_opt2">Delete</button>
+                              Press ->
+                          <button type="submit" class="btn btn-danger btn-fill"  name="btn_opt2">Delete</button>
                           </div>
                         </div>
           <br>

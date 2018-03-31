@@ -10,10 +10,10 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="margin-top-0 wow fadeIn">Get in Touch</h2>
                     <hr class="primary">
-                    <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <p> Fill out the form below and we'll get back to you as soon as possible.</p>
                 </div>
                 <div class="col-lg-12 text-center">
-                    <form class="contact-form row" method="post" action="https://heavywater.000webhostapp.com/mail3.php">
+                    <form class="contact-form row" method="post" action="https://heavywater.000webhostapp.com/mail3.php" >
                         <div class="col-md-4">
                             <label></label>
                             <input type="text" class="form-control" placeholder="Name" name="n1" required>
